@@ -40,7 +40,6 @@ namespace Advance_Form.Controllers
                     cmd.Parameters.AddWithValue("@Gender", e.Gender);
                     cmd.Parameters.AddWithValue("@Email", e.Email);
                     cmd.Parameters.AddWithValue("@Phone", e.PhoneNumber);
-                    cmd.Parameters.AddWithValue("@SecurityAnwser", e.SecurityAnwser);
                     cmd.Parameters.AddWithValue("@status", "INSERT");
                     con.Open();
                     ViewData["result"] = cmd.ExecuteNonQuery();
